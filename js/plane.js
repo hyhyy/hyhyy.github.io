@@ -1,0 +1,1 @@
+import gsap from"https://cdn.skypack.dev/gsap";const BOUNDS=50;document.getElementById("plane-animate").addEventListener("mousemove",({x:e,y:t})=>{e=gsap.utils.mapRange(0,window.innerWidth,-BOUNDS,BOUNDS,e),t=gsap.utils.mapRange(0,window.innerHeight,BOUNDS,-BOUNDS,t);gsap.set(document.getElementsByClassName("scene")[0],{"--rotate-x":t,"--rotate-y":e})});
